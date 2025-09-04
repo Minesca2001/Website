@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglesia - Datos Recolectados</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {}
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Nombre de la Iglesia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Quiénes Somos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contacto.html">Contacto/Registro</a></li>
+                <li><a href="datos.html">Datos Recolectados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Datos Recolectados (Simulación LocalStorage)</h2>
+        <p>Esta sección simula la visualización de datos recibidos del formulario en la página de Contacto. <strong>Nota Importante: Estos datos NO se guardan en un backend real ni en una base de datos central. Se almacenan localmente en tu navegador usando localStorage y solo son visibles para ti en este dispositivo. No persisten si limpias el almacenamiento del navegador y no son compartidos entre usuarios.</strong></p>
+
+        <div class="data-controls">
+             <label for="filterInteres">Filtrar por Interés:</label>
+             <select id="filterInteres">
+                <option value="">Todos</option>
+                <option value="evento">Evento</option>
+                <option value="voluntariado">Voluntariado</option>
+                <option value="oracion">Petición de Oración</option>
+                <option value="general">Información General</option>
+                 <option value="duda">Tengo una Duda</option>
+            </select>
+            <button id="sortByName">Ordenar por Nombre</button>
+             <button id="sortByInteres">Ordenar por Interés</button>
+        </div>
+
+        <ul id="dataList">
+            <!-- Los datos recolectados se mostrarán aquí por JavaScript desde localStorage -->
+             <li><em>Cargando datos guardados localmente...</em></li>
+        </ul>
+         <div class="image-placeholder">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50" preserveAspectRatio="xMidYMid slice">
+                 <rect width="100" height="50" fill="#9C27B0"/>
+                 <text x="50" y="28" font-family="Verdana, sans-serif" font-size="8" fill="#fff" text-anchor="middle" font-weight="bold">Información Relevante</text>
+             </svg>
+         </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 Nombre de la Iglesia. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

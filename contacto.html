@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglesia - Contacto y Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {}
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Nombre de la Iglesia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Quiénes Somos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contacto.html">Contacto/Registro</a></li>
+                <li><a href="datos.html">Datos Recolectados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Contacto y Registro</h2>
+        <p>Déjanos tus datos o envía un mensaje. Nos encantaría saber de ti.</p>
+        <form id="dataForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje / Petición (Opcional):</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <label for="interes">Interés Principal:</label>
+            <select id="interes" name="interes">
+                <option value="">Selecciona uno</option>
+                <option value="evento">Evento</option>
+                <option value="voluntariado">Voluntariado</option>
+                <option value="oracion">Petición de Oración</option>
+                <option value="general">Información General</option>
+                 <option value="duda">Tengo una Duda</option>
+            </select>
+
+            <button type="submit">Enviar Datos</button>
+
+            <p id="formMessage" class="message"></p>
+        </form>
+        <div class="image-placeholder">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50" preserveAspectRatio="xMidYMid slice">
+                 <rect width="100" height="50" fill="#FFEB3B"/>
+                 <text x="50" y="28" font-family="Verdana, sans-serif" font-size="8" fill="#333" text-anchor="middle" font-weight="bold">Conéctate con Nosotros</text>
+             </svg>
+         </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Nombre de la Iglesia. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
